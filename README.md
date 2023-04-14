@@ -1,3 +1,6 @@
+Link para acesso: https://rtavares0.github.io/kanban_trab/ 
+
+
 Esse é um código que cria uma página com um Kanban Board básico, que é uma ferramenta para gerenciamento visual de tarefas além disso usa CSS e JavaScript para estilizar e adicionar interatividade ao Kanban Board. O CSS é definido em um arquivo separado "style.css", e o JavaScript é definido em um arquivo separado "script.js".
 O CSS estiliza a aparência visual do Kanban Board e o JavaScript adiciona funcionalidades interativas, como adicionar e mover tarefas entre as categorias.
 
