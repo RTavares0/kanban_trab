@@ -1,0 +1,318 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.container {
+  background-color: #1f2630;
+  padding: 4.8rem 8rem 8rem 8rem;
+  border-radius: 7px;
+  box-shadow: 0 0 10px rgba(238, 238, 238, 0.3);
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  gap: 10rem;
+  justify-items: center;
+  overflow-y: auto;
+  height: 40rem;
+}
+
+.grid--3-colos {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.main-heading {
+  text-align: center;
+  font-size: 4rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 4.8rem;
+}
+
+.background-color {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.main-app {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding-right: 4.8rem;
+  padding-left: 4.8rem;
+  max-width: 120rem;
+}
+
+.state {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.icon {
+  display: inline-block;
+  font-size: 1.4rem;
+}
+
+.items-list {
+  list-style: none;
+  overflow: hidden;
+}
+
+.real-item {
+  position: relative;
+  transition: all 0.3s;
+}
+
+.real-item:last-child {
+  margin-bottom: 0;
+}
+
+.real-item p {
+  font-size: 1.8rem;
+  color: rgba(51, 51, 51, 0.8);
+  padding: 1rem;
+  border-radius: 3px;
+  background-color: #e5dcbf;
+  position: relative;
+}
+
+.item-input {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  background-color: #fff;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+  height: 3.8rem;
+}
+
+.real-item .icon-edit {
+  right: 4rem;
+}
+
+.real-item .icon-delete {
+  right: 1.5rem;
+}
+
+.category {
+  width: 23rem;
+}
+
+.icon-edit {
+  color: rgb(14, 40, 84);
+}
+
+.icon-delete {
+  color: red;
+}
+
+.btn {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.4rem;
+  border: none;
+  background: none;
+  color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 3px;
+  display: inline-block;
+  transition: all 0.3s;
+  height: 3.8rem;
+}
+
+.btn--add {
+  background-color: #00866d;
+}
+
+.btn--done {
+  background-color: rgba(22, 147, 231, 0.877);
+  position: relative;
+}
+
+.check-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.real-item i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.item-form {
+  height: 9rem;
+  transition: all 0.3s;
+}
+
+.item-form-temp {
+  height: 4.5rem !important;
+}
+
+.item-form-temp-remove {
+  height: 4.5rem !important;
+}
+
+.btn--done i {
+  position: static;
+}
+
+.btn--add:hover {
+  background-color: rgba(0, 134, 109, 0.7);
+}
+
+.btn--done:hover {
+  background-color: #0e86d4;
+}
+
+.hidden {
+  display: none;
+}
+
+.no-height {
+  height: 0 !important;
+  padding: 0 !important;
+}
+
+.item .no-height {
+  margin-bottom: 0;
+}
+
+.input-invalid {
+  background-color: #ffdddd;
+}
+
+.no-margin {
+  margin-bottom: 0;
+}
+
+.no-margin-at-all {
+  margin: 0 !important;
+}
+
+.small-margin-top {
+  margin-top: 0.7rem;
+}
+
+.small-margin-bottom {
+  margin-bottom: 0.7rem;
+}
+
+::-webkit-scrollbar {
+  width: 2rem;
+  transition: all 0.3s;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 134, 109, 0.3);
+  transition: all 0.3s;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 134, 109, 0.5);
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #00866d;
+}
+
+/* Ao arrastar */
+
+.item {
+  transition: all 0.3s;
+}
+
+.item--black {
+  border: 2px solid #000;
+}
+
+.gap {
+  height: 7px;
+  transition: all 0.3s;
+}
+
+.drop-over {
+  height: 20px;
+  background-color: #ccc;
+}
+
+.fixed-height {
+  height: 2rem;
+}
+
+.scale {
+  transform: scale(1.1);
+}
+
+.temp-element {
+  transition: all 0.3s;
+  opacity: 0;
+  height: 45px;
+}
+
+.hidden-opacity {
+  opacity: 0;
+}
+
+.hidden-real {
+  display: none;
+}
+
+/* Responsividade */
+
+@media (max-width: 66em) {
+  .grid {
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 56em) {
+  html {
+    font-size: 50%;
+  }
+
+  .grid {
+    height: 60rem;
+  }
+
+  .grid--3-colos {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding: 2.4rem;
+    width: 100%;
+  }
+
+  .category {
+    width: 28rem;
+  }
+}

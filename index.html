@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <title>Kanban Board</title>
+</head>
+
+<body>
+  <div class="background-color">
+    <section class="main-app">
+      <div class="container">
+        <h1 class="main-heading">Kanban Board</h1>
+        <div class="grid grid--3-colos">
+          <div class="not-started category" data-type="notStarted">
+            <p class="state">Tarefa não Iniciada.</p>
+            <ul class="items-list"></ul>
+            <div class="form-item">
+              <form action="">
+                <div class="item-box no-height">
+                  <input type="text" class="item-input no-height" />
+                </div>
+                <button type="button" class="btn btn--add">
+                  <span>Adicionar</span>
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <button type="submit" class="btn btn--done hidden small-margin-top">
+                  <i class="fa-solid fa-check"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="in-progress category" data-type="inProgress">
+            <p class="state">Tarefa em progresso.</p>
+            <ul class="items-list"></ul>
+            <div class="form-item">
+              <form action="">
+                <div class="item-box no-height">
+                  <input type="text" class="item-input no-height" />
+                </div>
+                <button type="button" class="btn btn--add">
+                  <span>Adicionar</span>
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <button type="submit" class="btn btn--done hidden small-margin-top">
+                  <i class="fa-solid fa-check"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="completed category" data-type="completed">
+            <p class="state">Tarefa concluída!</p>
+            <ul class="items-list"></ul>
+            <div class="form-item">
+              <form action="">
+                <div class="item-box no-height">
+                  <input type="text" class="item-input no-height" />
+                </div>
+                <button type="button" class="btn btn--add">
+                  <span>Adicionar</span>
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <button type="submit" class="btn btn--done hidden small-margin-top">
+                  <i class="fa-solid fa-check"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
